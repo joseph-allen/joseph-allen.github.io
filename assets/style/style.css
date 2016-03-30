@@ -2,6 +2,27 @@
   float: right;
 }
 
-.main-picture{
+.center{
+  text-align: center;
+}
+
+.main__picture{
   width: 100%;
+}
+
+.main__title{
+  text-align: center;
+}
+
+.main__subtitle{
+  text-align: center;
+  font-size: 16px;
+}
+
+.main__brief{
+  text-align: center;
+}
+
+.main__links{
+  text-align: center;
 }
