@@ -1,0 +1,73 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="icon" href="./assets/images/GS.ico">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:url"                content="http://gender-slider.com" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="What do you identify as?" />
+    <meta property="og:description"        content="A simple tool to help you share your Gender Identity" />
+    <meta property="og:image"              content="http://itspronouncedmetrosexual.com/wp-content/uploads/2012/01/1600-Genderbread-Person.jpg" />
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <h1 class="gs-title">Gender Slider</h1>
+      </div>
+    </nav>
+    <div class="container content">
+      <div class="row">
+        <h2 id="genderValue"></h2>
+        <div class="col-xs-2">
+          <p id="malePercentage" class="percentage">50% </p>
+          <img src="./assets/images/man.png">
+        </div>
+        <div class="col-xs-8">
+          <input type="range" id="genderSlider" value="50">
+        </div>
+        <div class="col-xs-2">
+          <p id="femalePercentage" class="percentage">50% Woman</p>
+          <img class="womanImage" src="./assets/images/woman.png">
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="gs-title">Share your gender with your friends now!</h3>
+        <div class="glyphs">
+          <a href="">
+            <img src="./assets/images/glyph1.png">
+          </a>
+          <a href="http://twitter.com/share?url=<URL>&text=Gender-Slider is awesome https://www.gender-slider.com &hashtags=GenderSlider">
+            <img src="./assets/images/glyph2.png">
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Disclaimer: Apologies for any misconception about gender and sex on this website, also apologies for the use of blue and pink to stereotypically identify men and women but the purpose of this website is to help educate people who utilise these stereotypes. Check out
+        <a href="http://itspronouncedmetrosexual.com/wp-content/uploads/2012/01/1600-Genderbread-Person.jpg">This</a>
+        inforgraphic if you need help and if you would like to help those in need
+        <a href="http://lgbt.foundation/about-us/donate-and-helplgf/">Donate</a> here. I do not consider all genders to lie inbetween Male and Female , however I believe this is a good start.
+        <div class="fb-share-button" data-href="http://allenduxburysolutions.co.uk/" data-layout="button"></div>
+      </p>
+
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="color.js"></script>
+    </div>
+
+
+
+  </body>
+
+</html>
