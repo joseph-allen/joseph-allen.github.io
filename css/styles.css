@@ -79,19 +79,11 @@
   .awesome-portfolio-menu ul li {
     cursor: pointer;
     display: inline-block;
-    color: #551a8b;
     padding: 10px;
   }
-  .awesome-portfolio-menu ul li.active,.awesome-portfolio-menu ul li:hover{border-color: #2bcdc1;
-  color: #2bcdc1;}
+ 
   .awesome-portfolio-content .mix{
       display: none;
   }
   img {max-width:100%;height:auto}
-  
-  
-  
-  
-  
-  
   
