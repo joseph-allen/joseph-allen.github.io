@@ -26,7 +26,8 @@
   .section-heading p{}
   .awesome-portfolio{}
   .single-awesome-portfolio {
-    width: 33.3%;
+    width: 30%;
+    margin: 1.25%;
     float: left;
     overflow:hidden
   }
