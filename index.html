@@ -57,11 +57,6 @@
 
         <div id="lead-overlay"></div>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
@@ -84,7 +79,7 @@
                         I've been paid as a Front-End Developer, Data Scientist, Project Manager, Hiring Manager, Social
                         Media Manager, Digital Artist, Business Developer and more. I appreciate that's a bit much!
                         <br><br>
-                        In my spare time I organise PyDataMCR, teach Mathematics and win pub quizzes.
+                        In my spare time I organise PyDataMCR, teach mathematics and win pub quizzes.
                     </p>
                 </div>
             </div>
@@ -155,6 +150,7 @@
     </div>
     <!-- End #experience -->
 
+    <!-- TODO: Add Pixel display, Whatsapp Sentiment Analysis, Blog posts, What is Data Science -->
     <!-- Portfolio -->
     <div id="projects">
         <div class="awesome-portfolio-area fix">
@@ -214,7 +210,7 @@
                         <!-- single-awesome-portfolio start -->
                         <div class="single-awesome-portfolio mix all art" style="display: inline-block;">
                             <a href="https://buff.ly/2ASPyCU">
-                                <div class="awesome-img"><img src="https://via.placeholder.com/400x300/" alt=""></div>
+                                <div class="awesome-img"><img src="images/Rose.jpeg" alt=""></div>
                                 <div class="awesome-info">
                                     <h3>If you leave it up to the audience, they can kill you</h3>
                                     <p>How does distance and anonymity affect how we interact and communicate online?
@@ -355,23 +351,11 @@
     <script>
         $(function () {
             $('.awesome-portfolio-content').mixItUp({
-                animation: {
-                    effects: 'rotateZ',
-                    duration: 1000,
-                }
-            });
-
-            $('.blog-column-content').mixItUp({
-                animation: {
-                    effects: 'scale',
-                    duration: 1000,
-                }
-            });
-
-            $('.portfolio-column-content').mixItUp({
-                animation: {
-                    effects: 'fade rotateY(-180deg)',
-                    duration: 1000,
+                "animation": {
+                    "duration": 250,
+                    "nudge": false,
+                    "reverseOut": false,
+                    "effects": "fade"
                 }
             });
         });
