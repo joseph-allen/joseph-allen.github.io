@@ -61,12 +61,12 @@
   }
   .awesome-info h3 {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 3px;
   }
   .awesome-info p {
     color: #aaa;
-    font-size: 12px;
+    font-size: 16px;
   }
   .single-awesome-portfolio a:hover .awesome-img {transform: translateY(100%);
   }
