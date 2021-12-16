@@ -1,734 +1,604 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div id="mobile-menu-open" class="shadow-large">
-      <i class="fa fa-bars" aria-hidden="true"></i>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-      <div id="mobile-menu-close">
-        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-      </div>
-      <ul id="menu" class="shadow">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#skills">Tools</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </header>
-    <!-- End header -->
+    <ul id="menu" class="shadow">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Tools</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <!-- End header -->
 
-    <div id="lead">
-      <div id="lead-content">
-        <h1>Joseph Allen</h1>
-        <h2>Not your average Joe.</h2>
-        <a href="CVJosephAllen.pdf" class="btn-rounded-white"
-          >Download Resume</a
-        >
+  <div id="lead">
+    <div id="lead-content">
+      <h1>Joseph Allen</h1>
+      <h2>Not your average Joe.</h2>
+      <div style="
+          display: flex;
+          justify-content: space-evenly;
+      ">
+        <a href="CVJosephAllen_React.pdf" class="btn-rounded-white">CV for Web</a>
+        <a href="CVJosephAllen_Data.pdf" class="btn-rounded-white">CV for Data</a>
         <a href="#contact" class="btn-rounded-white">Get in touch</a>
-        <a href="https://medium.com/@JosephAllen1234" class="btn-rounded-white"
-          >Blog</a
-        >
-      </div>
-      <!-- End #lead-content -->
-      <div id="lead-overlay"></div>
-      <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="heading">About Me</h2>
-          </div>
-          <div class="col-md-8">
-            <p>
-              I am a Manchester based Front-End Developer, Data Scientist and
-              Digital Artist. I work freelance & contract for my company
-              <a href="https://www.linkedin.com/company/avocadogreen"
-                >AvocadoGreen</a
-              >
-              <br /><br />
-              I've been paid as a Front-End Developer, Data Scientist, Project
-              Manager, Hiring Manager, Social Media Manager, Digital Artist,
-              Business Developer and more. I appreciate that's a bit much!
-              <br /><br />
-              In my spare time I organise PyDataMCR, teach mathematics and win
-              pub quizzes. I write blogs about agile working, recruitment and
-              beyond
-              <a href="https://medium.com/@JosephAllen1234">over here</a>.
-            </p>
-          </div>
-        </div>
+        <a href="https://medium.com/@JosephAllen1234" class="btn-rounded-white">Blog</a>
       </div>
     </div>
-    <!-- End #about -->
+    <!-- End #lead-content -->
+    <div id="lead-overlay"></div>
+    <!-- End #lead-down -->
+  </div>
+  <!-- End #lead -->
 
-    <div id="experience" class="background-alt">
-      <h2 class="heading">Experience</h2>
-      <div id="experience-timeline">
-        <div data-date="September 2018 – Current">
-          <h3>Freelance</h3>
-          <h4>Data Scientist, Front-End Developer, Project Director</h4>
-          <p>
-            Since September I have been working freelance for a collection of
-            clients.
-            <br /><br />
-            As a Data Scientist I work with companies to create prototype
-            projects and help the industry dip into the world of Machine
-            Learning.
-            <br /><br />
-            As a Front-End Developer I work with clients to bring Digital Art
-            experiences into reality.
-            <br /><br />
-            As a Digital Marketer I run multiple social media accounts and come
-            up with content plans.
-          </p>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="heading">About Me</h2>
         </div>
-
-        <div data-date="March 2018 – September 2018">
-          <h3>Telux</h3>
-          <h4>Front End Developer</h4>
+        <div class="col-md-8">
           <p>
-            At Telux I participated in the creation of a React project to manage
-            different types of telephones owned by a company.
+            I am a Manchester based Front-End Developer, Data Scientist and
+            Digital Artist. I work freelance & contract for my company
+            <a href="https://www.linkedin.com/company/avocadogreen">AvocadoGreen</a>
             <br /><br />
-            Noticing a lack in product ownership I performed the requirements
-            gathering, ticket breakdown of tasks and managed the expectations of
-            the larger business. I managed a weekly mastery time session where I
-            focused on individuals weaknesses and set up sessions of teaching,
-            presenting as well as weekly challenges to grow the team.
+            I've been paid as a Front-End Developer, Data Scientist, Project
+            Manager, Hiring Manager, Social Media Manager, Digital Artist,
+            Business Developer and more. I appreciate that's a bit much!
             <br /><br />
-            I introduced tooling such as: linting, automated testing, pre-commit
-            hooks, deployments as well as Visual Regression testing.
-          </p>
-        </div>
-
-        <div data-date="July 2017 – March 2018">
-          <h3>Laterooms.com</h3>
-          <h4>Data Scientist</h4>
-          <p>
-            Working in Data Science at Laterooms has given me an oppurtunity to
-            apply my tools as a Software Engineer to a more mathematical and
-            academic field.
-            <br /><br />
-            In my time here I have worked on the Hotel Ranking Algorithm,
-            MLWords (A project which automates the generation of AdWords
-            Campaigns), and many smaller investigations and models.
-          </p>
-        </div>
-
-        <div data-date="December 2015 – June 2017">
-          <h3>Laterooms.com</h3>
-          <h4>Front End Developer</h4>
-          <p>
-            Managed the creation of all new cobrands for the company as well as
-            the removal of redundant cobrands. We use Agile methodologies to
-            work in a large team without conflict in HTML, SCSS and JS.
-            <br /><br />
-            I am a big believer in User Experience and have given two brown bags
-            "How to fake it til you make it: a case study" and "CSS as a digital
-            art form".
+            In my spare time I organise PyDataMCR, teach mathematics and win
+            pub quizzes. I write blogs about agile working, recruitment and
+            beyond
+            <a href="https://medium.com/@JosephAllen1234">over here</a>.
           </p>
         </div>
       </div>
     </div>
-    <!-- End #experience -->
+  </div>
+  <!-- End #about -->
 
-    <!-- TODO: Add Pixel display, Whatsapp Sentiment Analysis, Blog posts, What is Data Science -->
-    <!-- Portfolio -->
-    <div id="projects">
-      <div class="awesome-portfolio-area fix">
-        <div class="container">
-          <!-- section-heading start -->
-          <h2 class="heading">Projects</h2>
-          <!-- section-heading end -->
-        </div>
-        <!-- awesome-portfolio start -->
-        <div class="container">
-          <div class="awesome-portfolio">
-            <div class="awesome-portfolio-menu">
-              <ul>
-                <li class="filter active" data-filter="all">
-                  <button type="button" class="btn btn-outline-primary">
-                    All
-                  </button>
-                </li>
-                <li class="filter" data-filter=".web">
-                  <button class="btn btn-outline-primary">Web</button>
-                </li>
-                <li class="filter" data-filter=".art">
-                  <button class="btn btn-outline-primary">Art</button>
-                </li>
-                <li class="filter" data-filter=".marketing">
-                  <button class="btn btn-outline-primary">Marketing</button>
-                </li>
-                <li class="filter" data-filter=".talk">
-                  <button class="btn btn-outline-primary">Talks</button>
-                </li>
-                <li class="filter" data-filter=".data">
-                  <button class="btn btn-outline-primary">Data</button>
-                </li>
-              </ul>
-            </div>
-
-            <div class="awesome-portfolio-content" id="MixItUp68DC04">
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat web"
-                style="display: inline-block;"
-              >
-                <a href="https://ortom-new.netlify.app/">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/Ortom.PNG');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Ortom</h3>
-                    <p>
-                      Built a website for Ortom, a Manchester-based data consultancy.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat web art"
-                style="display: inline-block;"
-              >
-                <a href="https://www.arebyte.com/raised-by-google">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/RBG.min.jpeg');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Raised By Google</h3>
-                    <p>
-                      Raised by Google explores the impacts of data practices on
-                      our seemingly autonomous lives, investigating to what
-                      degree our experiences are influenced by the systems of a
-                      data-driven society.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat web art"
-                style="display: inline-block;"
-              >
-                <a href="http://billposters.ch/projects/spectre/">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/Spectre.min.jpeg');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Spectre</h3>
-                    <p>
-                      Spectre is an immersive, ‘black box’ installation
-                      comprising six 2.2m high monoliths, which tells a
-                      cautionary tale of technology, democracy and society,
-                      curated by algorithms and powered by visitors’ data.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat marketing"
-                style="display: inline-block;"
-              >
-                <a href="https://twitter.com/connectwjapan">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/CWJ.min.jpeg');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>ConnectWithJapan</h3>
-                    <p>
-                      Managed the Twitter, Facebook and Instagram account of a
-                      global events comapny.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat web"
-                style="display: inline-block;"
-              >
-                <a
-                  href="https://chrome.google.com/webstore/detail/munch/mpldamlapjkafliahopdndfnfdbgmian"
-                >
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/munch.min.png');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Munch</h3>
-                    <p>
-                      Munch is a Chrome extension that shows you recipe
-                      inspiration each time you open a new tab on your computer.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat marketing"
-                style="display: inline-block;"
-              >
-                <a href="https://twitter.com/PyDataMCR">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/PyData.min.jpg');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>PyDataMCR</h3>
-                    <p>
-                      A Meetup for Open Source data tooling with over 1000
-                      members. Through this I manage a Twitter, Slack, Meetup
-                      and LinkedIn page.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat marketing"
-                style="display: inline-block;"
-              >
-                <a href="https://twitter.com/blueOracleData">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/BOD.min.png');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>BlueOracleData</h3>
-                    <p>
-                      Managed the company Twitter and LinkedIn for
-                      BlueOracleData, a company focused on onsite
-                      personalisation.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat talk"
-                style="display: inline-block;"
-              >
-                <a href="https://www.youtube.com/watch?v=_q3n-BAZXzU">
-                  <div
-                    class="awesome-img"
-                    style="
-                      background-image: url('../images/MasteryIsForYou.min.png');
-                    "
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Mastery is for you</h3>
-                    <p>
-                      This talk highlights my experiences with my first job in
-                      industry, what I learnt and how I was treated. This talk
-                      has been given at Salford University, MCRFred and
-                      PyDataMCR.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat talk"
-                style="display: inline-block;"
-              >
-                <a href="https://www.pdfta.com/portfolio/reason-digital/">
-                  <div
-                    class="awesome-img"
-                    style="
-                      background-image: url('../images/reasonDigital.min.jpeg');
-                    "
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Data Science Panel</h3>
-                    <p>
-                      Reason Digital use technology for good, and that’s
-                      something we can get behind. Small companies have a lot to
-                      gain from low hanging fruit. We agreed to a Q&A panel
-                      session.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat art"
-                style="display: inline-block;"
-              >
-                <a href="https://www.youtube.com/watch?v=lhCKQg59Acc">
-                  <div
-                    class="awesome-img"
-                    style="
-                      background-image: url('../images/SpaceInvader.min.jpeg');
-                    "
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Retro Pixel Display</h3>
-                    <p>
-                      A Retro Pixel art display for the FutureArtists Ready
-                      Player 1 event.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all talk"
-                style="display: inline-block;"
-              >
-                <a
-                  href="https://docs.google.com/presentation/d/1y1IjY3xGPmFIvMFcUb5Oig9o-IYhS7lCZpHUP1FLe9Y/edit?usp=sharing"
-                >
-                  <div
-                    class="awesome-img"
-                    style="
-                      background-image: url('../images/LowHanging.min.png');
-                    "
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>18 months of low hanging fruit</h3>
-                    <p>
-                      This is a story of a project that went awry. Over this
-                      period we pivoted our focus to projects that continued to
-                      deliver value. This talk has been given at OpenData and
-                      PYDataMCR.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all art"
-                style="display: inline-block;"
-              >
-                <a href="https://buff.ly/2ASPyCU">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/Rose.min.jpeg');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>
-                      If you leave it up to the audience, they can kill you
-                    </h3>
-                    <p>
-                      The audience interact with the piece by ‘tweeting’ the
-                      rose. Using sentiment analysis, each tweet triggers the
-                      release of water or poison depending on the intentions of
-                      the viewer.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all art web"
-                style="display: inline-block;"
-              >
-                <a href="https://earthwindow.org/gene-machine/">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/Gene.min.png');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>LA Priest - Gene Machine</h3>
-                    <p>
-                      Javascript based audio mixer for LA Priest's new track
-                      "What Moves".
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix art"
-                style="display: inline-block;"
-              >
-                <a href="https://youtu.be/S8BN_aUCGc0">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/Minshara.min.png');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Change Detection in Live Video</h3>
-                    <p>
-                      Created an application to allow Digital Artists to
-                      experiment with various forms of change detection and set
-                      the layers to their choice of color, image, video, coded
-                      example or live camera.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat data"
-                style="display: inline-block;"
-              >
-                <a href="https://redmeters.com/">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/RM.min.jpeg');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>Red Meters</h3>
-                    <p>
-                      Red Meters approached us to use Machine Learning to
-                      deliver a superior product. We worked with Red Meters to
-                      create a data pipeline that automates the transformation
-                      of raw data into features.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-              <!-- single-awesome-portfolio start -->
-              <div
-                class="single-awesome-portfolio mix all flat web marketing"
-                style="display: inline-block;"
-              >
-                <a href="https://www.pdfta.com/">
-                  <div
-                    class="awesome-img"
-                    style="background-image: url('../images/PDFTA.min.png');"
-                  ></div>
-                  <div class="awesome-info">
-                    <h3>PDFTA</h3>
-                    <p>
-                      PDFTA is a Data company, with a focus on
-                      onsite-personalisation and Machine Learning in production.
-                      I built the website and maanged all social media.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <!-- single-awesome-portfolio end -->
-            </div>
-          </div>
-          <!-- awesome-portfolio end -->
-        </div>
-      </div>
-    </div>
-    <!-- End Portfolio -->
-
-    <div id="skills" class="background-alt">
-      <h2 class="heading">Tools</h2>
-      <ul>
-        <li>Python</li>
-        <li>Pandas</li>
-        <li>SQL</li>
-
-        <li>React</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>Docker</li>
-
-        <li>GitHub</li>
-        <li>LaTeX</li>
-        <li>Trello</li>
-        <li>AirTable</li>
-
-        <li>Google Cloud Platform</li>
-        <li>Amazon Web Services</li>
-      </ul>
-    </div>
-    <!-- End #tools -->
-
-    <div id="education">
-      <h2 class="heading">Education</h2>
-      <div class="education-block">
-        <h3>University of Manchester</h3>
-        <span class="education-date">September 2013 - June 2017</span>
-        <h4>
-          2:1 BSc Computer Science and Mathematics With Industrial Experience
-        </h4>
+  <div id="experience" class="background-alt">
+    <h2 class="heading">Experience</h2>
+    <div id="experience-timeline">
+      <div data-date="September 2018 – Current">
+        <h3>Freelance</h3>
+        <h4>Data Scientist, Front-End Developer, Project Director</h4>
         <p>
-          Mainly focused on Graph Theory, Discrete Mathematics as well as
-          Computer Vision, Artifical Intelligence and User Experience. My final
-          project
-          <a href="https://youtu.be/S8BN_aUCGc0"
-            >Change Detection in Live Video</a
-          >.
+          Since September I have been working freelance for a collection of
+          clients.
+          <br /><br />
+          As a Data Scientist I work with companies to create prototype
+          projects and help the industry dip into the world of Machine
+          Learning.
+          <br /><br />
+          As a Front-End Developer I work with clients to bring Digital Art
+          experiences into reality.
+          <br /><br />
+          As a Digital Marketer I run multiple social media accounts and come
+          up with content plans.
         </p>
       </div>
-      <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
 
-    <div id="contact">
-      <h2>Get in Touch</h2>
-      <div id="contact-form">
-        <form
-          method="POST"
-          action="https://formspree.io/joseph.allen.1994@hotmail.com"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="Contact request from personal website"
-          />
-          <input
-            type="email"
-            name="_replyto"
-            placeholder="Your email"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your message"
-            required
-          ></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <div data-date="March 2018 – September 2018">
+        <h3>Telux</h3>
+        <h4>Front End Developer</h4>
+        <p>
+          At Telux I participated in the creation of a React project to manage
+          different types of telephones owned by a company.
+          <br /><br />
+          Noticing a lack in product ownership I performed the requirements
+          gathering, ticket breakdown of tasks and managed the expectations of
+          the larger business. I managed a weekly mastery time session where I
+          focused on individuals weaknesses and set up sessions of teaching,
+          presenting as well as weekly challenges to grow the team.
+          <br /><br />
+          I introduced tooling such as: linting, automated testing, pre-commit
+          hooks, deployments as well as Visual Regression testing.
+        </p>
       </div>
-      <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
 
-    <footer>
+      <div data-date="July 2017 – March 2018">
+        <h3>Laterooms.com</h3>
+        <h4>Data Scientist</h4>
+        <p>
+          Working in Data Science at Laterooms has given me an oppurtunity to
+          apply my tools as a Software Engineer to a more mathematical and
+          academic field.
+          <br /><br />
+          In my time here I have worked on the Hotel Ranking Algorithm,
+          MLWords (A project which automates the generation of AdWords
+          Campaigns), and many smaller investigations and models.
+        </p>
+      </div>
+
+      <div data-date="December 2015 – June 2017">
+        <h3>Laterooms.com</h3>
+        <h4>Front End Developer</h4>
+        <p>
+          Managed the creation of all new cobrands for the company as well as
+          the removal of redundant cobrands. We use Agile methodologies to
+          work in a large team without conflict in HTML, SCSS and JS.
+          <br /><br />
+          I am a big believer in User Experience and have given two brown bags
+          "How to fake it til you make it: a case study" and "CSS as a digital
+          art form".
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End #experience -->
+
+  <!-- TODO: Add Pixel display, Whatsapp Sentiment Analysis, Blog posts, What is Data Science -->
+  <!-- Portfolio -->
+  <div id="projects">
+    <div class="awesome-portfolio-area fix">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 social center">
+        <!-- section-heading start -->
+        <h2 class="heading">Projects</h2>
+        <!-- section-heading end -->
+      </div>
+      <!-- awesome-portfolio start -->
+      <div class="container">
+        <div class="awesome-portfolio">
+          <div class="awesome-portfolio-menu">
             <ul>
-              <li>
-                <a href="https://github.com/joezcool02" target="_blank"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
+              <li class="filter active" data-filter="all">
+                <button type="button" class="btn btn-outline-primary">
+                  All
+                </button>
               </li>
-              <li>
-                <a href="https://twitter.com/JosephAllen1234" target="_blank"
-                  ><i class="fa fa-twitter" aria-hidden="true"></i
-                ></a>
+              <li class="filter" data-filter=".web">
+                <button class="btn btn-outline-primary">Web</button>
               </li>
-              <li>
-                <a href="https://www.twine.fm/JoeAllen" target="_blank"
-                  >Twine</a
-                >
+              <li class="filter" data-filter=".art">
+                <button class="btn btn-outline-primary">Art</button>
+              </li>
+              <li class="filter" data-filter=".marketing">
+                <button class="btn btn-outline-primary">Marketing</button>
+              </li>
+              <li class="filter" data-filter=".talk">
+                <button class="btn btn-outline-primary">Talks</button>
+              </li>
+              <li class="filter" data-filter=".data">
+                <button class="btn btn-outline-primary">Data</button>
               </li>
             </ul>
           </div>
-        </div>
 
-        <div class="row center">
-          <div class="SquareArea">
-            <div class="LilSquare"></div>
-            <div class="MedSquare"></div>
-            <div class="BigSquare"></div>
-            <div class="MedSquare"></div>
-            <div class="LilSquare"></div>
-            <div class="SunLine"></div>
+          <div class="awesome-portfolio-content" id="MixItUp68DC04">
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat web" style="display: inline-block;">
+              <a href="https://ortom-new.netlify.app/">
+                <div class="awesome-img" style="background-image: url('../images/Ortom.PNG');"></div>
+                <div class="awesome-info">
+                  <h3>Ortom</h3>
+                  <p>
+                    Built a website for Ortom, a Manchester-based data consultancy.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat web art" style="display: inline-block;">
+              <a href="https://www.arebyte.com/raised-by-google">
+                <div class="awesome-img" style="background-image: url('../images/RBG.min.jpeg');"></div>
+                <div class="awesome-info">
+                  <h3>Raised By Google</h3>
+                  <p>
+                    Raised by Google explores the impacts of data practices on
+                    our seemingly autonomous lives, investigating to what
+                    degree our experiences are influenced by the systems of a
+                    data-driven society.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat web art" style="display: inline-block;">
+              <a href="http://billposters.ch/projects/spectre/">
+                <div class="awesome-img" style="background-image: url('../images/Spectre.min.jpeg');"></div>
+                <div class="awesome-info">
+                  <h3>Spectre</h3>
+                  <p>
+                    Spectre is an immersive, ‘black box’ installation
+                    comprising six 2.2m high monoliths, which tells a
+                    cautionary tale of technology, democracy and society,
+                    curated by algorithms and powered by visitors’ data.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat marketing" style="display: inline-block;">
+              <a href="https://twitter.com/connectwjapan">
+                <div class="awesome-img" style="background-image: url('../images/CWJ.min.jpeg');"></div>
+                <div class="awesome-info">
+                  <h3>ConnectWithJapan</h3>
+                  <p>
+                    Managed the Twitter, Facebook and Instagram account of a
+                    global events comapny.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat web" style="display: inline-block;">
+              <a href="https://chrome.google.com/webstore/detail/munch/mpldamlapjkafliahopdndfnfdbgmian">
+                <div class="awesome-img" style="background-image: url('../images/munch.min.png');"></div>
+                <div class="awesome-info">
+                  <h3>Munch</h3>
+                  <p>
+                    Munch is a Chrome extension that shows you recipe
+                    inspiration each time you open a new tab on your computer.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat marketing" style="display: inline-block;">
+              <a href="https://twitter.com/PyDataMCR">
+                <div class="awesome-img" style="background-image: url('../images/PyData.min.jpg');"></div>
+                <div class="awesome-info">
+                  <h3>PyDataMCR</h3>
+                  <p>
+                    A Meetup for Open Source data tooling with over 1000
+                    members. Through this I manage a Twitter, Slack, Meetup
+                    and LinkedIn page.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat marketing" style="display: inline-block;">
+              <a href="https://twitter.com/blueOracleData">
+                <div class="awesome-img" style="background-image: url('../images/BOD.min.png');"></div>
+                <div class="awesome-info">
+                  <h3>BlueOracleData</h3>
+                  <p>
+                    Managed the company Twitter and LinkedIn for
+                    BlueOracleData, a company focused on onsite
+                    personalisation.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat talk" style="display: inline-block;">
+              <a href="https://www.youtube.com/watch?v=_q3n-BAZXzU">
+                <div class="awesome-img" style="
+                      background-image: url('../images/MasteryIsForYou.min.png');
+                    "></div>
+                <div class="awesome-info">
+                  <h3>Mastery is for you</h3>
+                  <p>
+                    This talk highlights my experiences with my first job in
+                    industry, what I learnt and how I was treated. This talk
+                    has been given at Salford University, MCRFred and
+                    PyDataMCR.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat talk" style="display: inline-block;">
+              <a href="https://www.pdfta.com/portfolio/reason-digital/">
+                <div class="awesome-img" style="
+                      background-image: url('../images/reasonDigital.min.jpeg');
+                    "></div>
+                <div class="awesome-info">
+                  <h3>Data Science Panel</h3>
+                  <p>
+                    Reason Digital use technology for good, and that’s
+                    something we can get behind. Small companies have a lot to
+                    gain from low hanging fruit. We agreed to a Q&A panel
+                    session.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat art" style="display: inline-block;">
+              <a href="https://www.youtube.com/watch?v=lhCKQg59Acc">
+                <div class="awesome-img" style="
+                      background-image: url('../images/SpaceInvader.min.jpeg');
+                    "></div>
+                <div class="awesome-info">
+                  <h3>Retro Pixel Display</h3>
+                  <p>
+                    A Retro Pixel art display for the FutureArtists Ready
+                    Player 1 event.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all talk" style="display: inline-block;">
+              <a
+                href="https://docs.google.com/presentation/d/1y1IjY3xGPmFIvMFcUb5Oig9o-IYhS7lCZpHUP1FLe9Y/edit?usp=sharing">
+                <div class="awesome-img" style="
+                      background-image: url('../images/LowHanging.min.png');
+                    "></div>
+                <div class="awesome-info">
+                  <h3>18 months of low hanging fruit</h3>
+                  <p>
+                    This is a story of a project that went awry. Over this
+                    period we pivoted our focus to projects that continued to
+                    deliver value. This talk has been given at OpenData and
+                    PYDataMCR.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all art" style="display: inline-block;">
+              <a href="https://buff.ly/2ASPyCU">
+                <div class="awesome-img" style="background-image: url('../images/Rose.min.jpeg');"></div>
+                <div class="awesome-info">
+                  <h3>
+                    If you leave it up to the audience, they can kill you
+                  </h3>
+                  <p>
+                    The audience interact with the piece by ‘tweeting’ the
+                    rose. Using sentiment analysis, each tweet triggers the
+                    release of water or poison depending on the intentions of
+                    the viewer.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all art web" style="display: inline-block;">
+              <a href="https://earthwindow.org/gene-machine/">
+                <div class="awesome-img" style="background-image: url('../images/Gene.min.png');"></div>
+                <div class="awesome-info">
+                  <h3>LA Priest - Gene Machine</h3>
+                  <p>
+                    Javascript based audio mixer for LA Priest's new track
+                    "What Moves".
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix art" style="display: inline-block;">
+              <a href="https://youtu.be/S8BN_aUCGc0">
+                <div class="awesome-img" style="background-image: url('../images/Minshara.min.png');"></div>
+                <div class="awesome-info">
+                  <h3>Change Detection in Live Video</h3>
+                  <p>
+                    Created an application to allow Digital Artists to
+                    experiment with various forms of change detection and set
+                    the layers to their choice of color, image, video, coded
+                    example or live camera.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat data" style="display: inline-block;">
+              <a href="https://redmeters.com/">
+                <div class="awesome-img" style="background-image: url('../images/RM.min.jpeg');"></div>
+                <div class="awesome-info">
+                  <h3>Red Meters</h3>
+                  <p>
+                    Red Meters approached us to use Machine Learning to
+                    deliver a superior product. We worked with Red Meters to
+                    create a data pipeline that automates the transformation
+                    of raw data into features.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
+            <!-- single-awesome-portfolio start -->
+            <div class="single-awesome-portfolio mix all flat web marketing" style="display: inline-block;">
+              <a href="https://www.pdfta.com/">
+                <div class="awesome-img" style="background-image: url('../images/PDFTA.min.png');"></div>
+                <div class="awesome-info">
+                  <h3>PDFTA</h3>
+                  <p>
+                    PDFTA is a Data company, with a focus on
+                    onsite-personalisation and Machine Learning in production.
+                    I built the website and maanged all social media.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- single-awesome-portfolio end -->
           </div>
         </div>
+        <!-- awesome-portfolio end -->
       </div>
-    </footer>
-    <!-- End footer -->
+    </div>
+  </div>
+  <!-- End Portfolio -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-161204876-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <div id="skills" class="background-alt">
+    <h2 class="heading">Tools</h2>
+    <ul>
+      <li>React</li>
+      <li>Redux</li>
+      <li>Javascript</li>
+      <li>Node</li>
+      <li>Jest</li>
+      <li>Storybook</li>
+      <li>HTML</li>
+      <li>SCSS</li>
+      <li>CSS</li>
+      <li>GitHub</li>
+      <li>Gatsby</li>
+      <li>GraphQL</li>
+      <li>Python</li>
+      <li>Flask</li>
+      <li>Firebase</li>
+      <li>SQL</li>
+      <li>BigQuery</li>
+      <li>PostgreSQL</li>
+      <li>Netlify</li>
+      <li>Heroku</li>
+      <li>Google Cloud</li>
+      <li>Docker</li>
+    </ul>
+  </div>
+  <!-- End #tools -->
 
-      gtag("config", "UA-161204876-1");
-    </script>
+  <div id="education">
+    <h2 class="heading">Education</h2>
+    <div class="education-block">
+      <h3>University of Manchester</h3>
+      <span class="education-date">September 2013 - June 2017</span>
+      <h4>
+        2:1 BSc Computer Science and Mathematics With Industrial Experience
+      </h4>
+      <p>
+        Mainly focused on Graph Theory, Discrete Mathematics as well as
+        Computer Vision, Artifical Intelligence and User Experience. My final
+        project
+        <a href="https://youtu.be/S8BN_aUCGc0">Change Detection in Live Video</a>.
+      </p>
+    </div>
+    <!-- End .education-block -->
+  </div>
+  <!-- End #education -->
 
-    <script src="js/scripts.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-    <script>
-      $(function () {
-        $(".awesome-portfolio-content").mixItUp({
-          animation: {
-            duration: 250,
-            nudge: false,
-            reverseOut: false,
-            effects: "fade",
-          },
-        });
+  <div id="contact">
+    <h2>Get in Touch</h2>
+    <div id="contact-form">
+      <form method="POST" action="https://formspree.io/joseph.allen.1994@hotmail.com">
+        <input type="hidden" name="_subject" value="Contact request from personal website" />
+        <input type="email" name="_replyto" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- End #contact-form -->
+  </div>
+  <!-- End #contact -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 social center">
+          <ul>
+            <li>
+              <a href="https://github.com/joezcool02" target="_blank"><i class="fa fa-github"
+                  aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/JosephAllen1234" target="_blank"><i class="fa fa-twitter"
+                  aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twine.fm/JoeAllen" target="_blank">Twine</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="SquareArea">
+          <div class="LilSquare"></div>
+          <div class="MedSquare"></div>
+          <div class="BigSquare"></div>
+          <div class="MedSquare"></div>
+          <div class="LilSquare"></div>
+          <div class="SunLine"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161204876-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-161204876-1");
+  </script>
+
+  <script src="js/scripts.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+  <script>
+    $(function () {
+      $(".awesome-portfolio-content").mixItUp({
+        animation: {
+          duration: 250,
+          nudge: false,
+          reverseOut: false,
+          effects: "fade",
+        },
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
