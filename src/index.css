@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Beautiful gradient backgrounds */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(271 83% 32%) 0%,
+      hsl(271 83% 45%) 100%
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(271 83% 58%) 0%,
+      hsl(271 83% 75%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(240 15% 96%) 0%,
+      hsl(240 10% 92%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(0 0% 100%) 0%,
+      hsl(240 15% 98%) 100%
+    );
+
+    /* Elegant shadows */
+    --shadow-elegant: 0 10px 40px -15px hsl(220 25% 15% / 0.15);
+    --shadow-floating: 0 20px 60px -20px hsl(220 25% 15% / 0.2);
+    --shadow-glow: 0 0 40px hsl(271 83% 58% / 0.2);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --background: 240 15% 96%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    --primary: 271 83% 32%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 271 83% 58%;
+
+    --secondary: 240 20% 88%;
+    --secondary-foreground: 220 25% 15%;
+
+    --muted: 240 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 271 83% 58%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 15% 88%;
+    --input: 240 15% 88%;
+    --ring: 271 83% 58%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(220 25% 8%) 0%,
+      hsl(240 20% 12%) 100%
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(200 100% 60%) 0%,
+      hsl(240 80% 70%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(220 25% 8%) 0%,
+      hsl(220 20% 10%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(220 25% 10%) 0%,
+      hsl(220 20% 12%) 100%
+    );
+
+    --shadow-elegant: 0 10px 40px -15px hsl(0 0% 0% / 0.3);
+    --shadow-floating: 0 20px 60px -20px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(200 100% 70% / 0.3);
+
+    --background: 220 25% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 220 25% 15%;
+    --primary-glow: 271 83% 58%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 271 83% 75%;
+    --accent-foreground: 220 25% 15%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 271 83% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
