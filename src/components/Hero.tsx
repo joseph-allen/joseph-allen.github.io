@@ -1,22 +1,28 @@
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage, Language } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Download, Mail, FileText } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 
 const Hero = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const scrollToAbout = () => {
     const element = document.getElementById("about");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
+
+  // Reactively update CV file based on language
+  const cvFiles: Record<Language, string> = {
+    en: "Joseph-Allen-CV.pdf",
+    ja: "Joseph-Allen-CV-JP.pdf",
+  };
+
+  const cvFile = cvFiles[language];
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-primary">
         <img
-          src={"fuji2.jpg"} // Replace with your hero image path
+          src={"fuji2.jpg"}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
@@ -30,25 +36,18 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-black/90 mb-4 animate-fade-in-up [animation-delay:200ms]">
             {t("heroSubtitle")}
           </p>
-          {/* <div className="text-primary-foreground/80 mb-8 animate-fade-in-up [animation-delay:300ms]">
-            <p className="text-sm">
-              <span className="font-medium">LINKEDIN:</span> {t("portfolio")}
-            </p>
-          </div> */}
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in-up [animation-delay:400ms]">
-            <a
-              href="Joseph-Allen-CV.pdf" // Update this path to match your actual file location
-              download
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-floating"
             >
-              <Button
-                size="lg"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-floating"
-              >
+              <a href={cvFile} download>
                 <Download className="mr-2 h-5 w-5" />
-                Download CV
-              </Button>
-            </a>
+                {t("downloadCV")}
+              </a>
+            </Button>
           </div>
 
           <div className="animate-fade-in-up [animation-delay:600ms]">
@@ -56,7 +55,7 @@ const Hero = () => {
               variant="ghost"
               size="lg"
               onClick={scrollToAbout}
-              className="text-primary  animate-float"
+              className="text-primary animate-float"
             >
               <ArrowDown className="h-6 w-6" />
             </Button>

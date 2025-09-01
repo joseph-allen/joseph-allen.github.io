@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-type Language = "en" | "ja";
+export type Language = "en" | "ja";
 
 interface LanguageContextType {
   language: Language;
@@ -31,6 +31,7 @@ const translations = {
       "Front-End Developer with 8 years of experience in startups and products. Seeking a role in Japan to grow into Full-Stack development and take on leadership responsibilities. Previously lived in Japan; JLPT N5 certified.",
     portfolio: "linkedin.com/in/josephrossallen/",
     getInTouch: "Get in touch",
+    downloadCV: "Download CV",
 
     // About Section
     aboutTitle: "Professional Summary",
@@ -123,6 +124,7 @@ const translations = {
       "スタートアップと製品における8年の経験を持つフロントエンド開発者。日本でフルスタック開発に成長し、リーダーシップの責任を担う役割を求めています。日本在住歴あり；JLPT N5認定。",
     portfolio: "https://www.linkedin.com/in/josephrossallen/",
     getInTouch: "お問い合わせ",
+    downloadCV: "履歴書をダウンロード",
 
     // About Section
     aboutTitle: "専門要約",
