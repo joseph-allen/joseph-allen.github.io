@@ -38,7 +38,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in-up [animation-delay:400ms]">
             <a
-              href="/files/Joseph-Allen-CV.pdf" // Update this path to match your actual file location
+              href="Joseph-Allen-CV.pdf" // Update this path to match your actual file location
               download
             >
               <Button
